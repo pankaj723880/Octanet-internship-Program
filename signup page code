@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up for Weekly Meal Plan</title>
+   
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('signup.jpg'); /* Replace with your image path */
+    background-size: cover;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #9c2323;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.signup-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color:#ffcc00;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #cab540;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Join Our Healthy Meal Plan!</h1>
+    </header>
+    <br>
+    <br>
+    <br>
+    <section class="signup-container">
+        <form id="signup-form" action="http://localhost:3306/signup" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="address" placeholder="Your Address" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Healthy Meal Delivery Service. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
