@@ -1,0 +1,198 @@
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #9c2323;
+    color: white;
+    padding: 10px 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin-left: 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    color: lightgrey;
+    padding: 100px 60px;
+    text-align: center;
+    background-image: url(food2.avif);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button {
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 42%;
+}
+.cta-button:hover{
+    background-color: #9c2323 ;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+#menu {
+    padding: 40px 0;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+.menu-item:hover{
+        transform: scale(1.1);
+        transition: transform 0.3s ease
+}
+
+.menu-item img {
+    border-radius: 8px;
+    width: 150px; 
+    height: 150px; 
+    margin-bottom: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+}
+.two{
+    display: flex;
+    justify-content: center; /* Centers the items horizontally */
+    margin: 20px 0;
+}
+a:hover{
+    color: black;
+}
+
+
+button {
+    width: 80px;          /* Set width to make the button smaller */
+    height: 30px;         /* Set height to reduce the button height */
+    font-size: 12px;      /* Reduce font size for a smaller text */
+    padding: 5px 10px;    /* Reduce padding around the text */
+    background-color: #4CAF50; /* Button color */
+    color: white;         /* Text color */
+    border: none;         /* Remove border */
+    border-radius: 5px;   /* Rounded corners */
+    cursor: pointer; 
+
+}
+
+button:hover {
+    background-color:#9c2323;
+    
+}
+#testimonial-form button{
+background-color: #ffcc00 ;
+color: black;
+width: 60px;
+height: 25px;
+}
+#testimonial-form button:hover{
+    background-color: #9c2323;
+    transform: scale(1.1);
+    transition: transform 0.3s ease
+
+}
+#contact-form button{
+    background-color: #ffcc00 ;
+    color: black;
+    width: 120px;
+height: 25px;
+}
+#contact-form button:hover{
+    background-color: #9c2323;
+    transform: scale(1.1);
+    transition: transform 0.3s ease
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color:#9c2323;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#anime {
+    animation: zoomIn 1s ease-in-out;
+    transform-origin: center; 
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
